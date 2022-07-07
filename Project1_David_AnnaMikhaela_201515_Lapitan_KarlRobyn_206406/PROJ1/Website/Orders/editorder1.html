@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="order-style.css">
+    <title>Merrienda | Edit Order</title>
+</head>
+
+
+<body>
+    <div class="inner-body order">
+        <header>
+            <nav>
+                <div class="logo grid logo-img">
+                    <a href="../index.html"><img src="../Images/logoplain.png" alt="logo"></a>
+                </div>
+                <a href="../index.html">
+                    <div>Home</div>
+                </a>
+                <a href="../Customers/customers.html">
+                    <div>Customers</div>
+                </a>
+                <a href="../Menu/menu.html">
+                    <div>Menu</div>
+                </a>
+                <a href="orders.html" class="active">
+                    <div>Orders</div>
+                </a>
+            </nav>
+        </header>
+
+        <div class="main-container">
+            <center>
+                <h2>Edit Order</h2>
+                <form action="orders.html">
+                    <label for="">Order No.</label>
+                    <input type="text" name="order_no" id="order_no" value="#0001">
+
+
+                    <label for="">Customer:</label>
+                    <input type="text" name="customer" id="customer" value="Laura Reyes">
+
+                    <label for="">Date</label>
+                    <input type="date" name="date" id="date" value="5/14/22">
+
+                    <h2 style="text-align: left; margin-left: 5%;">Food Purchased</h2>
+
+                    <label for="">Pancit Canton</label>
+                    <input type="number" name="pancit-canton" id="pancit-canton" value="0">
+
+                    <label for="">Pork Sisig</label>
+                    <input type="number" name="pork-sisig" id="pork-sisig" value="0">
+
+                    <label for="">Streetfood Platter</label>
+                    <input type="number" name="streetfood-platter" id="streetfood-platter" value="3">
+
+                    <label for="">Halo Halo</label>
+                    <input type="number" name="halo-halo" id="halo-halo" value="3">
+
+                    <label for="">Bibingka</label>
+                    <input type="number" name="bibingka" id="bibingka" value="5">
+
+
+
+                    <div class="actions-edit">
+                        <a href="order1updated.html"><input type="button" value="Update Order" class="view-buttons"></a>
+                        <a href="orders.html"><input type="button" value="Cancel" class="view-buttons"></a>
+
+
+
+                    </div>
+
+
+                </form>
+            </center>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <img class = "mini" src="../Images/logosmall.png">
+    
+        <p>About Us</p>
+    
+        <p>Contact Us</p>
+        
+        <p>Leave a Message</p>
+        
+        <img src="../Images/socials.png">
+    </footer>
+</body>
+
+</html>

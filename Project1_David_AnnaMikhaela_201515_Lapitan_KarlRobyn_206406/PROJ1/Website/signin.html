@@ -1,0 +1,95 @@
+<!--
+    Anna Mikhaela David, 201515
+    Karl Robyn P. Lapitan, 206406
+    July 8, 2022
+
+    We certify that this submission complies with the DISCS Academic 
+    Integrity Policy.
+
+    If We have discussed my HTML code with anyone other than
+    our instructor(s), our groupmate(s), the teaching assistant(s),
+    the extent of each discussion has been clearly noted along with a
+    proper citation in the comments of our program.
+
+    If any HTML code or documentation used in our program was obtained 
+    from another source, either modified or unmodified, such as a textbook, 
+    website, or another individual, the extent of its use has been clearly 
+    noted along with a proper citation in the comments of my/our program.
+-->
+
+<!--
+1. meta tags: https://www.w3schools.com/css/css_rwd_viewport.asp 
+2. transition and hover: https://css-tricks.com/almanac/properties/t/transition/
+3. mobile phones width: https://www.instructables.com/Make-your-HTML-Website-suitable-for-Mobile-Devices/
+4. nav: https://www.w3schools.com/tags/tag_nav.asp
+5. float: https://www.w3schools.com/cssref/pr_class_float.asp
+6. measurements and units: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units 
+7. font importing shortcut: https://www.wikihow.com/Use-Google-Fonts-in-CSS#:~:text=Go%20to%20https%3A%2F%2Ffonts,the%20style%20you%20like%20most.&text=Copy%20the%20code.,next%20to%20%22%40import%22.
+8. input: https://www.w3schools.com/tags/tag_input.asp
+9. <center>: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center
+10. table making: https://www.w3schools.com/html/html_tables.asp, 
+11. <thead>,<tr>,<th>: https://www.w3schools.com/tags/tag_thead.asp
+12. <label>:https://www.w3schools.com/tags/tag_label.asp
+13. pancit that shakes: https://www.w3schools.com/howto/howto_css_shake_image.asp
+14. !important: https://www.w3schools.com/css/css_important.asp
+15. text area: https://www.w3schools.com/tags/tag_textarea.asp
+16. vh: https://www.w3schools.com/cssref/css_units.asp
+17. selectors: https://www.w3schools.com/css/css_selectors.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merrienda | Sign in</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="inner-body">
+    <nav>
+      <div class="logo grid logo-img">
+        <a href="index.html"><img src="./Images/logoplain.png" alt="logo"></a>
+      </div>
+      <a href="index.html">
+        <div>Home</div>
+      </a>
+      <a href="./Customers/customers.html">
+        <div>Customers</div>
+      </a>
+      <a href="./Menu/menu.html">
+        <div>Menu</div>
+      </a>
+      <a href="./Orders/orders.html">
+        <div>Orders</div>
+      </a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Sign in</h2>
+        <!--In Order for the box to be typable, placeholder is the one outputted in the textbox -->
+        <form action="./index.html" class="form">
+          <input type="text" name="username" id="username" placeholder="Username"/>
+          <input type="password" name="password" id="password" placeholder="Password"/>
+
+          <input type="submit" value="Sign in" class="button"> 
+        </form>
+    </div>
+  </div>
+  
+  <footer>
+    <img class = "mini" src="./Images/logosmall.png">
+
+    <p>About Us</p>
+
+    <p>Contact Us</p>
+    
+    <p>Leave a Message</p>
+    
+    <img src="./Images/socials.png">
+</footer>
+</body>
+
+</html>

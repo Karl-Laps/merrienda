@@ -1,0 +1,58 @@
+/* over rides actions in style.css my previous usage */
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  column-gap: 5px;
+  color: white;
+  width: 100%;
+}
+
+
+.add {
+  background-color: #587ed4;
+  width: 15%;
+  height: 40px;
+  color: white;
+  font-size: 17px;
+  border: 5px;
+  border-radius: 5px;
+  float: right;
+}
+
+.orders-main{
+  width: 85%;
+  margin: auto;
+}
+
+p{
+  font-size: 18px;
+}
+
+.order{
+  height:110vh;
+}
+
+.main-content {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-top: -20px;
+}
+
+.left{
+  margin-right: 5%;
+}
+
+.order_no{
+  margin-left: 5%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.right{
+  margin-top: -55px;
+}

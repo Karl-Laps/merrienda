@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="order-style.css">
+    <title>Merrienda | Add Order</title>
+</head>
+
+<body>
+    <div class="inner-body order">
+        <header>
+            <nav>
+                <div class="logo grid logo-img">
+                    <a href="../index.html"><img src="../IMAGES/logoplain.png" alt="logo"></a>
+                </div>
+                <a href="../index.html">
+                    <div>Home</div>
+                </a>
+                <a href="../customers/customers.html">
+                    <div>Customers</div>
+                </a>
+                <a href="../menu/menu.html">
+                    <div>Menu</div>
+                </a>
+                <a href="orders.html" class="active">
+                    <div>Orders</div>
+                </a>
+            </nav>
+        </header>
+
+
+        <div class="main-container">
+            <center>
+                <h2>Add Order</h2>
+                <form action="orders.html">
+                    <label for="">Order No.</label>
+                    <input type="text" name="order_no" id="order_no">
+
+
+                    <label for="">Customer:</label>
+                    <input type="text" name="customer" id="customer">
+
+                    <label for="">Date</label>
+                    <input type="date" name="date" id="date">
+
+                    <h2 style="text-align: left; margin-left: 5%;">Food Purchased</h2>
+
+                    <label for="">Pancit Canton</label>
+                    <input type="number" name="pancit-canton" id="pancit-canton">
+
+                    <label for="">Pork Sisig</label>
+                    <input type="number" name="pork-sisig" id="pork-sisig">
+
+                    <label for="">Streetfood Platter</label>
+                    <input type="number" name="streetfood-platter" id="streetfood-platter">
+
+                    <label for="">Halo Halo</label>
+                    <input type="number" name="halo-halo" id="halo-halo">
+
+                    <label for="">Bibingka</label>
+                    <input type="number" name="bibingka" id="bibingka">
+
+
+                    <div class="actions-edit">
+                        <input type="submit" value="Add Order" class="view-buttons">
+    
+                        <input type="submit" value="Cancel" class="view-buttons">
+                    </div>
+    
+
+
+                </form>
+            </center>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <img class = "mini" src="../Images/logosmall.png">
+    
+        <p>About Us</p>
+    
+        <p>Contact Us</p>
+        
+        <p>Leave a Message</p>
+        
+        <img src="../Images/socials.png">
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+textarea {
+  display: block;
+  width: 90%;
+  border: 0;
+  border-radius: 5px;
+}
+
+.actions-edit {
+  margin-top: 20px !important;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  column-gap: 5px;
+  color: white;
+  width: 100%;
+}
+
+.main-container {
+  padding-top: -10px;
+  width: 85%;
+  margin: auto;
+}
+
+.description{
+    margin-top: 50px !important;
+}
+
+.add {
+  background-color: #587ed4;
+  width: 15%;
+  height: 40px;
+  color: white;
+  font-size: 17px;
+  border: 5px;
+  border-radius: 5px;
+  float: right;
+}
+
+.main-content {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    margin-top: -20px;
+}
+
+.actions-food {
+    display: grid;
+    grid-template-columns: repeat(2, 110px);
+    float: right;
+    margin-top: 20px;
+    margin-right: 3%;
+}
+
+.pancit{
+  margin-top: -100px;
+  animation: shake 0.5s;
+}
+
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

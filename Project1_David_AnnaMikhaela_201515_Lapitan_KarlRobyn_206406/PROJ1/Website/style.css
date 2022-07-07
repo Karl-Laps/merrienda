@@ -1,0 +1,394 @@
+/*
+    Anna Mikhaela R. David, 201515
+    Karl Robyn P. Lapitan, 206406
+    July 8, 2022
+
+    We certify that this submission complies with the DISCS Academic 
+    Integrity Policy.
+
+    If we have discussed our CSS code with anyone other than
+    our instructor(s), our groupmate(s), the teaching assistant(s),
+    the extent of each discussion has been clearly noted along with a
+    proper citation in the comments of our program.
+
+    If any CSS code or documentation used in our program was obtained 
+    from another source, either modified or unmodified, such as a textbook, 
+    website, or another individual, the extent of its use has been clearly 
+    noted along with a proper citation in the comments of our program.
+*/
+
+/*
+1. meta tags: https://www.w3schools.com/css/css_rwd_viewport.asp 
+2. transition and hover: https://css-tricks.com/almanac/properties/t/transition/
+3. mobile phones width: https://www.instructables.com/Make-your-HTML-Website-suitable-for-Mobile-Devices/
+4. nav: https://www.w3schools.com/tags/tag_nav.asp
+5. float: https://www.w3schools.com/cssref/pr_class_float.asp
+6. measurements and units: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units 
+7. font importing shortcut: https://www.wikihow.com/Use-Google-Fonts-in-CSS#:~:text=Go%20to%20https%3A%2F%2Ffonts,the%20style%20you%20like%20most.&text=Copy%20the%20code.,next%20to%20%22%40import%22.
+8. input: https://www.w3schools.com/tags/tag_input.asp
+9. <center>: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center
+10. table making: https://www.w3schools.com/html/html_tables.asp, 
+11. <thead>,<tr>,<th>: https://www.w3schools.com/tags/tag_thead.asp
+12. <label>:https://www.w3schools.com/tags/tag_label.asp
+13. pancit that shakes: https://www.w3schools.com/howto/howto_css_shake_image.asp
+14. !important: https://www.w3schools.com/css/css_important.asp
+15. text area: https://www.w3schools.com/tags/tag_textarea.asp
+16. vh: https://www.w3schools.com/cssref/css_units.asp
+16. selectors: https://www.w3schools.com/css/css_selectors.asp
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Overpass:wght@300&family=Signika:wght@300;700&display=swap");
+
+* {
+  padding: 0px;
+}
+
+button{
+  cursor: pointer;
+}
+
+body {
+  background-color: #587ed4;
+}
+
+#welcome {
+  font-size: 48px;
+  text-align: center;
+}
+
+#sub {
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* pic + welcome spiel... */
+.main-content {
+  padding: 25px;
+  /* left and right in index, center */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.left {
+  margin-top: -55px;
+}
+
+/* .welcome{
+  text-align: center;
+} */
+
+/* if merrienda logo clicked = it becomes larger!*/
+.main-pic:hover {
+  width: 420px;
+  transition: 0.1s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+th {
+  font-family: "Overpass", sans-serif;
+}
+
+p,
+.sign-in {
+  font-family: "Signika", sans-serif;
+}
+
+  /* inner box */
+.inner-body {
+  width: 95%;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #e6d892; 
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* for anchors, when hovered = increase + blue*/
+a:hover {
+  color: #587ed4;
+  width: 100%;
+  transition: 0.1s;
+  font-size: larger;
+}
+
+/* if hovered in add button,across 3 */
+.add:hover {
+  background-color: white;
+  color: black;
+  transition: 0.1s;
+  border: 3px solid #587ed4;
+}
+
+/* if in that nav item, with class active = color blue */
+.active {
+  color: #587ed4;
+}
+
+/* nav bar = 5 columns for the header */
+nav {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Cabin", sans-serif;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  margin-top: -25px;
+}
+
+/* index sign-in, */
+.button {
+  background-color: #ff8f96;
+  width: 20%;
+  height: 40px;
+  color: white;
+  font-size: 17px;
+  border: 5px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid #ff8f96;
+  transition: 0.1s;
+}
+
+.form-container{
+  text-align: center;
+}
+
+/* for customer1 buttons,  */
+.view-actions{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  float: right;
+  margin-right: 4%;
+}
+
+.confirm,
+.cancel {
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.customer-text{
+  float: left; 
+  margin-top: -4px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-family: "Signika", sans-serif;
+}
+
+footer > p{
+  margin-top: 35px;
+}
+
+footer > p:hover{
+  color: #e6d892;
+  font-size: large;
+}
+
+
+.mini{
+  margin-left: 80px;
+}
+
+table {
+  clear: both;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  font-family: "Signika", sans-serif;
+}
+
+th{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+td{
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #E4BFC1;
+}
+
+.odd {
+  background-color: white;
+}
+
+/* add records */
+
+input {
+  width: 90%;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: "Signika", sans-serif;
+  color: gray;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, 50px);
+  float: right;
+  margin-right: 6%;
+}
+
+.add-btn {
+  background-color: #FF8F96;
+}
+
+.add-btn:hover {
+  background-color: white;
+  border: 3px solid #FF8F96;
+  transition: .10s;
+}
+
+.cancel {
+  width: 60px;
+}
+
+.actions{
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  align-items: center;
+}
+
+/* grid I used for the 2 options bottom right buttons */
+.actions-edit{
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  float: right;
+  margin-right: 5%;
+}
+
+/* inner pages action buttons */
+.view-buttons{
+  background-color: #FF8F96;
+  color: white;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  width: 90px;
+}
+
+.view-buttons:hover{
+  border: 3px solid #FF8F96;
+  color: black;
+  background-color: white;
+}
+
+/* view, edit, delete button styling */
+.view,
+.edit,
+.delete {
+  background-color: #587ED4;
+  height: 30px;
+  width: 55px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.view:hover{
+  background-color: white;
+  color: black;
+  transition: 0.1s;
+  border: 3px solid #587ed4;
+}
+
+.edit:hover{
+    background-color: white;
+    color: black;
+    transition: 0.1s;
+    border: 3px solid #587ed4;
+}
+
+.delete:hover{
+  background-color: white;
+  color: black;
+  transition: 0.1s;
+  border: 3px solid #587ed4;
+}
+/* when asked whether deletion (or smth of the same type) is  for sure! inner red block */
+.question {
+  padding: 30px;
+  background-color: #E4BFC1;
+  width: 45%;
+  height: 170px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question-text {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+li{
+  list-style: none;
+}
+
+/* for the form font */
+form{
+  font-family: "Signika", sans-serif;
+}
+
+textarea{
+  font-family: "Signika", sans-serif;
+  color: gray;
+}
+
+.mainpic{
+  animation: appear 0.7s;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0.1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
